@@ -1,0 +1,99 @@
+db.profesor.insert(
+{
+	"nombre": "Alberto",
+	"cursos": 4,
+	"pais": null,
+	"lenguajes": ["Java","Kotlin","Swift"],
+	"direccion": {
+		"calle": "Mi calle",
+		"numero": 3
+	}
+})
+
+db.profesor.insert(
+{
+	'nombre': "Alberto",
+	cursos: 4,
+	pais: null,
+	lenguajes: ["Java","Kotlin","Swift"],
+	direccion: {
+		calle: "Mi calle",
+		numero: 3
+	}
+})
+
+db.curso.insertMany(
+[{
+	"nombre": "Curso MongoDB",
+	"duracion": 300,
+	"estudiantes": 1000,
+	"fecha de lanzamiento": "2020"
+},
+{
+	"nombre": "Curso NodeJS",
+	"duracion": 200,
+	"estudiantes": 500,
+	"fecha de lanzamiento": "2021"
+},
+{
+	"nombre": "Curso Kotlin",
+	"duracion": 200,
+	"estudiantes": 300,
+	"fecha de lanzamiento": null
+}])
+
+db.profesor.insertMany(
+[{
+	"nombre": "Maria",
+	"cursos": 5,
+	"pais": "España",
+	"lenguajes": ["Java","Kotlin","Swift"],
+	"direccion": {
+		"calle": "Maria Calle",
+		"numero": 5
+		}
+},
+{
+	"nombre": "Marcos",
+	"cursos": 5,
+	"pais": "España",
+	"lenguajes": ["Java","Kotlin","Swift"],
+	"direccion": {
+		"calle": "Maria Calle",
+		"numero": 5
+		}
+},
+{
+"nombre": "Laura",
+	"cursos": 5,
+	"pais": "España",
+	"lenguajes": ["Java","Kotlin","Swift"],
+	"direccion": {
+		"calle": "Maria Calle",
+		"numero": 5
+		}
+}])
+
+db.profesor.insertOne(
+{
+	nombre: "Maria",
+	cursos: 5,
+	pais: "España",
+	lenguajes: ["Java","Kotlin","Swift"],
+	direccion: {
+		calle: "Maria calle",
+		numero: 5
+	}
+})
+
+db.profesor.insertOne(
+{
+	nombre: "Maria",
+	cursos: 5,
+	pais: "España",
+	lenguajes: ["Java","Kotlin","Swift"],
+	direccion: {
+		calle: "Maria calle",
+		numero: 5
+	}
+})
